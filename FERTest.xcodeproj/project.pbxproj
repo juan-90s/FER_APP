@@ -3,27 +3,60 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A7EA99D2656E57B007C1E39 /* FerCNN.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0A7EA99C2656E57B007C1E39 /* FerCNN.mlmodel */; };
+		0A8E221826614C2E00011A64 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8E221726614C2E00011A64 /* Emotion.swift */; };
+		0A8E225A2662239700011A64 /* FERMeterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8E22592662239700011A64 /* FERMeterVC.swift */; };
+		0A8E225C266226ED00011A64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8E225B266226ED00011A64 /* Main.storyboard */; };
+		0A8E225E26622E0300011A64 /* FERCalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8E225D26622E0300011A64 /* FERCalendarVC.swift */; };
+		0A8E226026626AE700011A64 /* FERWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8E225F26626AE600011A64 /* FERWeatherView.swift */; };
 		0AA791B7262D7CA600040186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA791B6262D7CA600040186 /* AppDelegate.swift */; };
 		0AA791B9262D7CA600040186 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA791B8262D7CA600040186 /* SceneDelegate.swift */; };
-		0AA791BB262D7CA600040186 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA791BA262D7CA600040186 /* ViewController.swift */; };
-		0AA791BE262D7CA600040186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA791BC262D7CA600040186 /* Main.storyboard */; };
+		0AA791BB262D7CA600040186 /* FERMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA791BA262D7CA600040186 /* FERMainVC.swift */; };
 		0AA791C0262D7CA600040186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA791BF262D7CA600040186 /* Assets.xcassets */; };
 		0AA791C3262D7CA600040186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA791C1262D7CA600040186 /* LaunchScreen.storyboard */; };
+		0AC2D8AC2663AC4600CADC9A /* Cloud.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AC2D8AB2663AC4600CADC9A /* Cloud.json */; };
+		0AC2D8AE2663ACA900CADC9A /* Sun.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AC2D8AD2663ACA900CADC9A /* Sun.json */; };
+		0AC2D8B02663AD2300CADC9A /* WindyCloud.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AC2D8AF2663AD2300CADC9A /* WindyCloud.json */; };
+		0AC2D8B22663AD7500CADC9A /* RainCloud.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AC2D8B12663AD7500CADC9A /* RainCloud.json */; };
+		0AC2D8B42663ADAD00CADC9A /* RainyWeather.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AC2D8B32663ADAD00CADC9A /* RainyWeather.json */; };
+		0AC2D8B62663AE1200CADC9A /* Haze.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AC2D8B52663AE1200CADC9A /* Haze.json */; };
+		0AC2D8B82663AE8F00CADC9A /* TorrentialRain.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AC2D8B72663AE8F00CADC9A /* TorrentialRain.json */; };
+		0AC2D8BA2663AED500CADC9A /* StormyWeather.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AC2D8B92663AED500CADC9A /* StormyWeather.json */; };
+		430DBE488404390FF35C7090 /* Pods_FERTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF171E677967B7CDF997E199 /* Pods_FERTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A7EA99C2656E57B007C1E39 /* FerCNN.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FerCNN.mlmodel; sourceTree = "<group>"; };
+		0A8E221726614C2E00011A64 /* Emotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
+		0A8E22592662239700011A64 /* FERMeterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FERMeterVC.swift; sourceTree = "<group>"; };
+		0A8E225B266226ED00011A64 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0A8E225D26622E0300011A64 /* FERCalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FERCalendarVC.swift; sourceTree = "<group>"; };
+		0A8E225F26626AE600011A64 /* FERWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FERWeatherView.swift; sourceTree = "<group>"; };
+		0A8E22612662907800011A64 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A8E22652662908000011A64 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A8E22682662908500011A64 /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA791B3262D7CA600040186 /* FERTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FERTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA791B6262D7CA600040186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AA791B8262D7CA600040186 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0AA791BA262D7CA600040186 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0AA791BD262D7CA600040186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0AA791BA262D7CA600040186 /* FERMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FERMainVC.swift; sourceTree = "<group>"; };
 		0AA791BF262D7CA600040186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AA791C2262D7CA600040186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AA791C4262D7CA600040186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AC2D8AB2663AC4600CADC9A /* Cloud.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Cloud.json; sourceTree = "<group>"; };
+		0AC2D8AD2663ACA900CADC9A /* Sun.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Sun.json; sourceTree = "<group>"; };
+		0AC2D8AF2663AD2300CADC9A /* WindyCloud.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WindyCloud.json; sourceTree = "<group>"; };
+		0AC2D8B12663AD7500CADC9A /* RainCloud.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RainCloud.json; sourceTree = "<group>"; };
+		0AC2D8B32663ADAD00CADC9A /* RainyWeather.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RainyWeather.json; sourceTree = "<group>"; };
+		0AC2D8B52663AE1200CADC9A /* Haze.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Haze.json; sourceTree = "<group>"; };
+		0AC2D8B72663AE8F00CADC9A /* TorrentialRain.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TorrentialRain.json; sourceTree = "<group>"; };
+		0AC2D8B92663AED500CADC9A /* StormyWeather.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StormyWeather.json; sourceTree = "<group>"; };
+		A4D860B11707BABD177BFF1A /* Pods-FERTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FERTest.debug.xcconfig"; path = "Target Support Files/Pods-FERTest/Pods-FERTest.debug.xcconfig"; sourceTree = "<group>"; };
+		AF171E677967B7CDF997E199 /* Pods_FERTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FERTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA859A36FB0F2B8CB661C10F /* Pods-FERTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FERTest.release.xcconfig"; path = "Target Support Files/Pods-FERTest/Pods-FERTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430DBE488404390FF35C7090 /* Pods_FERTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +76,8 @@
 			children = (
 				0AA791B5262D7CA600040186 /* FERTest */,
 				0AA791B4262D7CA600040186 /* Products */,
+				2484BCA00BE4C53615422A1F /* Pods */,
+				E4491440BA00B520923E1AB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +92,56 @@
 		0AA791B5262D7CA600040186 /* FERTest */ = {
 			isa = PBXGroup;
 			children = (
+				0AC2D8AA2663AB8D00CADC9A /* animations */,
+				0A7EA99C2656E57B007C1E39 /* FerCNN.mlmodel */,
 				0AA791B6262D7CA600040186 /* AppDelegate.swift */,
 				0AA791B8262D7CA600040186 /* SceneDelegate.swift */,
-				0AA791BA262D7CA600040186 /* ViewController.swift */,
-				0AA791BC262D7CA600040186 /* Main.storyboard */,
+				0AA791BA262D7CA600040186 /* FERMainVC.swift */,
+				0A8E22592662239700011A64 /* FERMeterVC.swift */,
+				0A8E225D26622E0300011A64 /* FERCalendarVC.swift */,
+				0A8E221726614C2E00011A64 /* Emotion.swift */,
+				0A8E225F26626AE600011A64 /* FERWeatherView.swift */,
 				0AA791BF262D7CA600040186 /* Assets.xcassets */,
+				0A8E225B266226ED00011A64 /* Main.storyboard */,
 				0AA791C1262D7CA600040186 /* LaunchScreen.storyboard */,
 				0AA791C4262D7CA600040186 /* Info.plist */,
 			);
 			path = FERTest;
+			sourceTree = "<group>";
+		};
+		0AC2D8AA2663AB8D00CADC9A /* animations */ = {
+			isa = PBXGroup;
+			children = (
+				0AC2D8AD2663ACA900CADC9A /* Sun.json */,
+				0AC2D8B52663AE1200CADC9A /* Haze.json */,
+				0AC2D8AB2663AC4600CADC9A /* Cloud.json */,
+				0AC2D8AF2663AD2300CADC9A /* WindyCloud.json */,
+				0AC2D8B12663AD7500CADC9A /* RainCloud.json */,
+				0AC2D8B32663ADAD00CADC9A /* RainyWeather.json */,
+				0AC2D8B72663AE8F00CADC9A /* TorrentialRain.json */,
+				0AC2D8B92663AED500CADC9A /* StormyWeather.json */,
+			);
+			path = animations;
+			sourceTree = "<group>";
+		};
+		2484BCA00BE4C53615422A1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4D860B11707BABD177BFF1A /* Pods-FERTest.debug.xcconfig */,
+				FA859A36FB0F2B8CB661C10F /* Pods-FERTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E4491440BA00B520923E1AB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A8E22682662908500011A64 /* FSCalendar.framework */,
+				0A8E22652662908000011A64 /* Realm.framework */,
+				0A8E22612662907800011A64 /* RealmSwift.framework */,
+				AF171E677967B7CDF997E199 /* Pods_FERTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AA791C7262D7CA600040186 /* Build configuration list for PBXNativeTarget "FERTest" */;
 			buildPhases = (
+				670C3E3017D2C8EF2B2635C7 /* [CP] Check Pods Manifest.lock */,
 				0AA791AF262D7CA600040186 /* Sources */,
 				0AA791B0262D7CA600040186 /* Frameworks */,
 				0AA791B1262D7CA600040186 /* Resources */,
+				328C9A4976182396310B5CF6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,36 +203,83 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AC2D8AE2663ACA900CADC9A /* Sun.json in Resources */,
+				0AC2D8B62663AE1200CADC9A /* Haze.json in Resources */,
+				0A8E225C266226ED00011A64 /* Main.storyboard in Resources */,
+				0AC2D8B02663AD2300CADC9A /* WindyCloud.json in Resources */,
+				0AC2D8B82663AE8F00CADC9A /* TorrentialRain.json in Resources */,
+				0AC2D8BA2663AED500CADC9A /* StormyWeather.json in Resources */,
 				0AA791C3262D7CA600040186 /* LaunchScreen.storyboard in Resources */,
+				0AC2D8AC2663AC4600CADC9A /* Cloud.json in Resources */,
 				0AA791C0262D7CA600040186 /* Assets.xcassets in Resources */,
-				0AA791BE262D7CA600040186 /* Main.storyboard in Resources */,
+				0AC2D8B22663AD7500CADC9A /* RainCloud.json in Resources */,
+				0AC2D8B42663ADAD00CADC9A /* RainyWeather.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		328C9A4976182396310B5CF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FERTest/Pods-FERTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FERTest/Pods-FERTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FERTest/Pods-FERTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		670C3E3017D2C8EF2B2635C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FERTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0AA791AF262D7CA600040186 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AA791BB262D7CA600040186 /* ViewController.swift in Sources */,
+				0AA791BB262D7CA600040186 /* FERMainVC.swift in Sources */,
+				0A8E225A2662239700011A64 /* FERMeterVC.swift in Sources */,
 				0AA791B7262D7CA600040186 /* AppDelegate.swift in Sources */,
+				0A7EA99D2656E57B007C1E39 /* FerCNN.mlmodel in Sources */,
 				0AA791B9262D7CA600040186 /* SceneDelegate.swift in Sources */,
+				0A8E221826614C2E00011A64 /* Emotion.swift in Sources */,
+				0A8E225E26622E0300011A64 /* FERCalendarVC.swift in Sources */,
+				0A8E226026626AE700011A64 /* FERWeatherView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0AA791BC262D7CA600040186 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0AA791BD262D7CA600040186 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0AA791C1262D7CA600040186 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +342,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,12 +409,14 @@
 		};
 		0AA791C8262D7CA600040186 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4D860B11707BABD177BFF1A /* Pods-FERTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 696725K2GA;
 				INFOPLIST_FILE = FERTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +430,14 @@
 		};
 		0AA791C9262D7CA600040186 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA859A36FB0F2B8CB661C10F /* Pods-FERTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 696725K2GA;
 				INFOPLIST_FILE = FERTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

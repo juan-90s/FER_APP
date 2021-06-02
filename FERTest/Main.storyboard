@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZCh-q9-PeB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="jNA-J9-Bgi">
+            <objects>
+                <viewController id="TjE-WI-AJs" customClass="FERMainVC" customModule="FERTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tXy-bo-eyB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Tge-w8-fx4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="camera.fill" catalog="system" id="iGe-dn-aS0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="38V-1U-VR2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1030" y="578"/>
+        </scene>
+        <!--MeterVC-->
+        <scene sceneID="ldq-bW-hCo">
+            <objects>
+                <viewController id="zEw-99-sn4" customClass="FERMeterVC" customModule="FERTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="77p-r9-cji">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7zA-R8-HlQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="sun.haze.fill" catalog="system" id="Dvz-uo-YgB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="acJ-RC-y3y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-284" y="578"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="i5f-mx-58h">
+            <objects>
+                <tabBarController id="ZCh-q9-PeB" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZZR-0f-Cic">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="TjE-WI-AJs" kind="relationship" relationship="viewControllers" id="hIv-i1-6M2"/>
+                        <segue destination="zEw-99-sn4" kind="relationship" relationship="viewControllers" id="hsQ-9v-fcR"/>
+                        <segue destination="xkW-bz-4OE" kind="relationship" relationship="viewControllers" id="qmo-Ys-Uzj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kRE-b3-dE8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-284" y="-163"/>
+        </scene>
+        <!--CalendarVC-->
+        <scene sceneID="h02-MM-kMU">
+            <objects>
+                <viewController id="xkW-bz-4OE" customClass="FERCalendarVC" customModule="FERTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sgc-U7-KnV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3Ip-5I-Fdq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="calendar" catalog="system" id="eGK-e8-elg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fjw-ii-MAw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="508.69565217391306" y="577.90178571428567"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="camera.fill" catalog="system" width="128" height="94"/>
+        <image name="sun.haze.fill" catalog="system" width="128" height="119"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
