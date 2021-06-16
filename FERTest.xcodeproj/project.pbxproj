@@ -26,6 +26,13 @@
 		0AC2D8B62663AE1200CADC9A /* Haze.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AC2D8B52663AE1200CADC9A /* Haze.json */; };
 		0AC2D8B82663AE8F00CADC9A /* TorrentialRain.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AC2D8B72663AE8F00CADC9A /* TorrentialRain.json */; };
 		0AC2D8BA2663AED500CADC9A /* StormyWeather.json in Resources */ = {isa = PBXBuildFile; fileRef = 0AC2D8B92663AED500CADC9A /* StormyWeather.json */; };
+		0ACD1EFF267271F8008331F3 /* gentle_rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0ACD1EFE267271F8008331F3 /* gentle_rain.mp3 */; };
+		0ACD1F0826729CBF008331F3 /* thuder_rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0ACD1F0726729CBF008331F3 /* thuder_rain.mp3 */; };
+		0ACD1F0A26729CC4008331F3 /* bird_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0ACD1F0926729CC4008331F3 /* bird_sound.mp3 */; };
+		0ACD1F0C2672A29C008331F3 /* bird_sound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0ACD1F0B2672A29C008331F3 /* bird_sound2.mp3 */; };
+		0ACD1F0E2672A35D008331F3 /* wind_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0ACD1F0D2672A35D008331F3 /* wind_sound.mp3 */; };
+		0ACD1F102672A6BD008331F3 /* rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0ACD1F0F2672A6BD008331F3 /* rain.mp3 */; };
+		0ACD1F122672A93E008331F3 /* silence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0ACD1F112672A93E008331F3 /* silence.mp3 */; };
 		430DBE488404390FF35C7090 /* Pods_FERTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF171E677967B7CDF997E199 /* Pods_FERTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +61,13 @@
 		0AC2D8B52663AE1200CADC9A /* Haze.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Haze.json; sourceTree = "<group>"; };
 		0AC2D8B72663AE8F00CADC9A /* TorrentialRain.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TorrentialRain.json; sourceTree = "<group>"; };
 		0AC2D8B92663AED500CADC9A /* StormyWeather.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StormyWeather.json; sourceTree = "<group>"; };
+		0ACD1EFE267271F8008331F3 /* gentle_rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gentle_rain.mp3; sourceTree = "<group>"; };
+		0ACD1F0726729CBF008331F3 /* thuder_rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thuder_rain.mp3; sourceTree = "<group>"; };
+		0ACD1F0926729CC4008331F3 /* bird_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bird_sound.mp3; sourceTree = "<group>"; };
+		0ACD1F0B2672A29C008331F3 /* bird_sound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bird_sound2.mp3; sourceTree = "<group>"; };
+		0ACD1F0D2672A35D008331F3 /* wind_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wind_sound.mp3; sourceTree = "<group>"; };
+		0ACD1F0F2672A6BD008331F3 /* rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rain.mp3; sourceTree = "<group>"; };
+		0ACD1F112672A93E008331F3 /* silence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = silence.mp3; sourceTree = "<group>"; };
 		A4D860B11707BABD177BFF1A /* Pods-FERTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FERTest.debug.xcconfig"; path = "Target Support Files/Pods-FERTest/Pods-FERTest.debug.xcconfig"; sourceTree = "<group>"; };
 		AF171E677967B7CDF997E199 /* Pods_FERTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FERTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA859A36FB0F2B8CB661C10F /* Pods-FERTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FERTest.release.xcconfig"; path = "Target Support Files/Pods-FERTest/Pods-FERTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +106,7 @@
 		0AA791B5262D7CA600040186 /* FERTest */ = {
 			isa = PBXGroup;
 			children = (
+				0ACD1EFD267271C5008331F3 /* sounds */,
 				0AC2D8AA2663AB8D00CADC9A /* animations */,
 				0A7EA99C2656E57B007C1E39 /* FerCNN.mlmodel */,
 				0AA791B6262D7CA600040186 /* AppDelegate.swift */,
@@ -122,6 +137,20 @@
 				0AC2D8B92663AED500CADC9A /* StormyWeather.json */,
 			);
 			path = animations;
+			sourceTree = "<group>";
+		};
+		0ACD1EFD267271C5008331F3 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0ACD1F112672A93E008331F3 /* silence.mp3 */,
+				0ACD1F0D2672A35D008331F3 /* wind_sound.mp3 */,
+				0ACD1F0926729CC4008331F3 /* bird_sound.mp3 */,
+				0ACD1F0B2672A29C008331F3 /* bird_sound2.mp3 */,
+				0ACD1F0F2672A6BD008331F3 /* rain.mp3 */,
+				0ACD1F0726729CBF008331F3 /* thuder_rain.mp3 */,
+				0ACD1EFE267271F8008331F3 /* gentle_rain.mp3 */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 		2484BCA00BE4C53615422A1F /* Pods */ = {
@@ -205,13 +234,20 @@
 			files = (
 				0AC2D8AE2663ACA900CADC9A /* Sun.json in Resources */,
 				0AC2D8B62663AE1200CADC9A /* Haze.json in Resources */,
+				0ACD1F102672A6BD008331F3 /* rain.mp3 in Resources */,
 				0A8E225C266226ED00011A64 /* Main.storyboard in Resources */,
 				0AC2D8B02663AD2300CADC9A /* WindyCloud.json in Resources */,
 				0AC2D8B82663AE8F00CADC9A /* TorrentialRain.json in Resources */,
+				0ACD1F122672A93E008331F3 /* silence.mp3 in Resources */,
+				0ACD1F0A26729CC4008331F3 /* bird_sound.mp3 in Resources */,
 				0AC2D8BA2663AED500CADC9A /* StormyWeather.json in Resources */,
 				0AA791C3262D7CA600040186 /* LaunchScreen.storyboard in Resources */,
+				0ACD1F0C2672A29C008331F3 /* bird_sound2.mp3 in Resources */,
+				0ACD1F0E2672A35D008331F3 /* wind_sound.mp3 in Resources */,
 				0AC2D8AC2663AC4600CADC9A /* Cloud.json in Resources */,
+				0ACD1F0826729CBF008331F3 /* thuder_rain.mp3 in Resources */,
 				0AA791C0262D7CA600040186 /* Assets.xcassets in Resources */,
+				0ACD1EFF267271F8008331F3 /* gentle_rain.mp3 in Resources */,
 				0AC2D8B22663AD7500CADC9A /* RainCloud.json in Resources */,
 				0AC2D8B42663ADAD00CADC9A /* RainyWeather.json in Resources */,
 			);

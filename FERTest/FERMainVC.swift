@@ -109,8 +109,12 @@ class FERMainVC: UIViewController,AVCaptureVideoDataOutputSampleBufferDelegate{
         dataOutput.setSampleBufferDelegate(self, queue: DispatchQueue(label: "videoQueue"))
         captureSession.addOutput(dataOutput)
 
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(getDebug), name: Notification.Name("changeSan"), object: nil)
         setupUI()
+    }
+    
+    deinit {
+       NotificationCenter.default.removeObserver(self)
     }
 
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
@@ -229,7 +233,7 @@ class FERMainVC: UIViewController,AVCaptureVideoDataOutputSampleBufferDelegate{
         //UI相关
         let tabbarHeight = self.tabBarController?.tabBar.bounds.size.height ?? 0
         let statusHeight = view.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
-        let contentRect = CGRect(x: 0, y: statusHeight, width: SCREEN_WIDTH, height: SCREEN_HEIGHT-statusHeight-tabbarHeight)
+        let contentRect = CGRect(x: 0, y: statusHeight, width: SCREEN_WIDTH, height: SCREEN_HEIGHT-statusHeight)
         
         //绘制Mask
         let maskLayer = CAShapeLayer()
@@ -238,7 +242,7 @@ class FERMainVC: UIViewController,AVCaptureVideoDataOutputSampleBufferDelegate{
         let outerBorderPath = UIBezierPath(rect: contentRect).cgPath
         path.addPath(outerBorderPath)
         let innerBorderPath = CGPath(
-            roundedRect: CGRect(x: 20, y: 100, width: contentRect.width-40, height: contentRect.height-150),
+            roundedRect: CGRect(x: 20, y: 100, width: contentRect.width-40, height: contentRect.height-200),
             cornerWidth: 20,
             cornerHeight: 20,
             transform: nil)
@@ -260,7 +264,7 @@ class FERMainVC: UIViewController,AVCaptureVideoDataOutputSampleBufferDelegate{
         button.setTitleColor(.darkGray, for: .normal)
         button.addTarget(self, action: #selector(tapped(_:)), for: .touchUpInside)
         button.layer.cornerRadius = 5
-        view.addSubview(button)
+        //view.addSubview(button)
         
         faceBoxView = UIView()
         faceBoxView.backgroundColor = .white
@@ -288,23 +292,15 @@ class FERMainVC: UIViewController,AVCaptureVideoDataOutputSampleBufferDelegate{
         monitorView.layer.cornerRadius = 5
         
         //高斯模糊值 指示器
-        let slider = UISlider()
-        slider.frame = CGRect(x: 0, y: 0, width: 100, height: 20)
-        slider.center = CGPoint(x: SCREEN_HEIGHT/2, y: 30)
-        slider.minimumValue = 0.0
-        slider.maximumValue = 2.0
-        slider.setValue(0.0, animated: true)
-        slider.addTarget(self, action: #selector(sliderValueChange(_:)), for: .valueChanged)
-        view.addSubview(slider)
-        
-        let sigmaLabel = UILabel()
-        sigmaLabel.frame = CGRect(x: 0, y: 0, width: 50, height: 10)
-        sigmaLabel.center = CGPoint(x: SCREEN_HEIGHT/2, y: 10)
-        sigmaLabel.font = .systemFont(ofSize: 10)
-        sigmaLabel.textColor = .white
-        sigmaLabel.text = "0.0"
-        sigmaLabel.tag = 1000
-        view.addSubview(sigmaLabel)
+//        let slider = UISlider()
+//        slider.frame = CGRect(x: 0, y: 0, width: 100, height: 20)
+//        slider.center = CGPoint(x: SCREEN_HEIGHT/2, y: 30)
+//        slider.minimumValue = 0.0
+//        slider.maximumValue = 2.0
+//        slider.setValue(0.0, animated: true)
+//        slider.addTarget(self, action: #selector(sliderValueChange(_:)), for: .valueChanged)
+//        view.addSubview(slider)
+    
         
     }
     
@@ -378,6 +374,10 @@ class FERMainVC: UIViewController,AVCaptureVideoDataOutputSampleBufferDelegate{
         sigma = Double(slider.value)
         let label:UILabel = self.view.viewWithTag(1000) as! UILabel
         label.text = String(format: "%.1d", arguments: [sigma])
+    }
+    @objc func getDebug() {
+        meter.san = EmotionMeter.getSanFrom(weather: meter.weather)
+        
     }
 }
 

@@ -51,8 +51,9 @@ class EmotionMeter: Object {
         let date = Date()
         return date.getString()
     }()
-    var fact:Float = 50
-    var san:Float = 0.5
+    var staticFact:Float = 0.5
+    var fact:Float = 0
+    var san:Float = 50
     
     override static func primaryKey() -> String? {
         return "date"
@@ -60,46 +61,50 @@ class EmotionMeter: Object {
     
     
     func updateSanByEmotion(_ emotion:Emotion) {
+        if fact == 0{
+            fact = staticFact
+        }
         if emotion.confidence < 0.5 {
             return
         }
+        
+        switch emotion.expression {
+        case .angry:
+            fact += 0.04 * staticFact
+            san -= 1 * fact
+        case .disgust:
+            fact -= 0.02 * staticFact
+            san -= 1 * fact
+        case .fear:
+            fact += 0.02 * staticFact
+            san -= 1 * fact
+        case .happy:
+            san += 1 * fact
+        case .neutral:
+            if fact > staticFact {
+                fact -= 0.02 * staticFact
+            } else if fact < staticFact {
+                fact = staticFact
+            }
+            if san > 50 {
+                san -= 0.2 * fact
+            } else if san < 50 {
+                san += 0.2 * fact
+            }
+        case .sad:
+            san -= 1 * fact
+        case .surprise:
+            fact += 0.02 * staticFact
+        }
         if san > 100 {
             san = 100
-        } else if (san >= 0)&&(san <= 100){
-            switch emotion.expression {
-            case .angry:
-                fact += 0.05
-                san -= 1 * fact
-            case .disgust:
-                fact -= 0.05
-                san -= 1 * fact
-            case .fear:
-                fact += 0.05
-                san -= 1 * fact
-            case .happy:
-                san += 1 * fact
-            case .neutral:
-                if fact > 1 {
-                    fact -= 0.05
-                } else if fact < 1 {
-                    fact = 0.5
-                }
-                if san > 50 {
-                    san -= 0.05 * fact
-                } else if san < 50 {
-                    san += 0.05 * fact
-                }
-                
-            case .sad:
-                san -= 1 * fact
-            case .surprise:
-                fact += 0.05
-            }
-            if fact > 2 {
-                fact = 1
-            }
         } else if san <= 0 {
             san = 0
+        }
+        if fact > 2 * staticFact {
+            fact = 1.9 * staticFact
+        } else if fact < staticFact {
+            fact = staticFact
         }
     }
     

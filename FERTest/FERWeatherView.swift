@@ -8,12 +8,13 @@
 import UIKit
 import Lottie
 
+
 class FERWeatherView: UIView {
     //var firstImageView:UIImageView!
     //var secondImageView:UIImageView!
     var animationView: AnimationView!
     
-
+    
     override init(frame: CGRect){
         super.init(frame: frame)
         let width = frame.width
@@ -53,6 +54,7 @@ class FERWeatherView: UIView {
         appear(animation,animated: animated)
         
     }
+    
     func appear(_ animation:Animation? , animated:Bool) {
         DispatchQueue.main.async {
             let width = self.frame.width
@@ -70,8 +72,8 @@ class FERWeatherView: UIView {
         }
     }
     
-    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
+    
 }

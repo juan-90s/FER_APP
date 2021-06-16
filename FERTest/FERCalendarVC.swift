@@ -68,10 +68,6 @@ class FERCalendarVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate 
         todayView.addSubview(label)
         
         weatherView = FERWeatherView(frame: CGRect(x: 0, y: 0, width: 140, height: 140))
-        if let meter:EmotionMeter = realm?.object(ofType: EmotionMeter.self, forPrimaryKey: selectedDate) {
-            let weather = meter.weather
-            weatherView.changeWeather(weather: weather, animated: false)
-        }
         todayView.addSubview(weatherView)
         
         
@@ -104,8 +100,16 @@ class FERCalendarVC: UIViewController, FSCalendarDataSource, FSCalendarDelegate 
         
     }
     
-    override  func  viewDidLayoutSubviews() {
-        super .viewDidLayoutSubviews()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        dateLabel.text = "\(gregorian.component(.year, from: Date()))年\(gregorian.component(.month, from: Date()))月\(gregorian.component(.day, from: Date()))日"
+        
+        if let meter:EmotionMeter = realm?.object(ofType: EmotionMeter.self, forPrimaryKey: selectedDate) {
+            let weather = meter.weather
+            weatherView.changeWeather(weather: weather, animated: false)
+        }
+        
+        calendar.select(Date.dateWithString(selectedDate))
         
     }
     
